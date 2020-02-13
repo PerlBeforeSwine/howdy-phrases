@@ -11,14 +11,6 @@ app = Flask(__name__)
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-@app.route("/favicon.ico")
-    # Generate random numbers
-    first = random.randint(0,11)
-    second = random.randint(0,24)
-    third = random.randint(0,25)
-    phrase = makePhrase(first,second,third)
-    return render_template("index.html", phrase=phrase)
-
 @app.route("/")
 def index():
     # Generate random numbers
