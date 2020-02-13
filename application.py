@@ -12,12 +12,14 @@ app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 
-@app.route("/")
+@app.route("/") 
 def index():
-    first = random.randint(0,11)
+    """first = random.randint(0,11)
     second = random.randint(0,24)
     third = random.randint(0,25)
     phrase = makePhrase(first,second,third)
+    return render_template("index.html", phrase=phrase)"""
+    phrase = "hello, world!"
     return render_template("index.html", phrase=phrase)
 
 
