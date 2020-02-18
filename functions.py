@@ -23,7 +23,7 @@ def makePhrase(first,second,third):
     """Generate a silly phrase based on RNG"""
 
     # Start with a new line
-    phrase =""
+    phrase = ""
 
     # Read the files into arrays without newlines
     with open("static/1.txt") as part1:

@@ -14,12 +14,10 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 @app.route("/") 
 def index():
-    """first = random.randint(0,11)
+    first = random.randint(0,11)
     second = random.randint(0,24)
     third = random.randint(0,25)
     phrase = makePhrase(first,second,third)
-    return render_template("index.html", phrase=phrase)"""
-    phrase = "hello, world!"
     return render_template("index.html", phrase=phrase)
 
 
@@ -72,3 +70,8 @@ def errorhandler(e):
 # Listen for errors
 for code in default_exceptions:
     app.errorhandler(code)(errorhandler)
+
+if __name__ == '__main__':
+ app.debug = True
+ port = int(os.environ.get("PORT", 5000))
+ app.run(host='0.0.0.0', port=port)
