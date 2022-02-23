@@ -5,7 +5,6 @@ numpy==1.17.4
 oauthlib==3.1.0
 pandas==0.25.3
 pexpect==4.7.0
-Pillow==9.0.0
 plotly==4.3.0
 ptyprocess==0.6.0
 pyasn1==0.4.7
@@ -33,6 +32,6 @@ tinycss2==1.0.2
 tqdm==4.38.0
 twython==3.7.0
 typed-ast==1.4.0
-urllib3==1.26.5
+urllib3>=1.21.1
 virtualenv==16.7.7
 webencodings==0.5.1
