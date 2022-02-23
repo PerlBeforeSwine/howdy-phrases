@@ -1,7 +1,7 @@
 Flask==1.1.1
 Flask-Session==0.3.1
 html5lib==1.0.1
-numpy==1.21.0
+numpy==1.19.5
 oauthlib==3.1.0
 pandas==0.25.3
 pexpect==4.7.0
